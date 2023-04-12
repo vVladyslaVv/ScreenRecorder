@@ -10,14 +10,14 @@ import numpy as np
 resolution = pyautogui.size()
 
 # Define video codec and output file name
-codec = cv2.VideoWriter_fourcc(*"XVID")
-filename = "my_screen_recording.avi"
+codec = cv2.VideoWriter_fourcc('m', 'p', '4', 'v')
+filename = 'my_screen_recording.mp4'
 
 # Define frames per second
 fps = 30
 
 # Define the length of time to record in seconds
-record_time = 10
+record_time = 30
 
 # Calculate the number of frames to record based on the record time and fps
 num_frames = record_time * fps
